@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Filter Demo</title>
+</head>
+<body>
+    <a href="login?userid=admin&age=30">Account Dashboard (allow filter)</a><br>
+    <a href="login?userid=johndoe">Account Profile (allow filter)</a><br>
+    <a href="login">Account Dashboard (block filter)</a><br>
+    <a href="info">Info Page </a><br>
+	<form action="login" method="get">  
+		<table>
+			<tr>
+				<td>Name</td>
+				<td><input name="userid" /></td>
+			</tr>
+			<tr>
+				<td>Age</td>
+				<td><input name="age" /></td>
+			</tr>
+		</table>
+		<input type="submit" />
+	</form>
+</body>
+</html>
